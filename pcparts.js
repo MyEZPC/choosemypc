@@ -9,7 +9,7 @@ var pcparts = {
                     "socket" : "LGA1151"
                 },{
                     "id" : 3,
-                    "processor" : "AMD Ryzen 7 2700X",
+                    "processor" : "AMD Ryzen 70 2700X",
                     "socket" : "AM4"
                 },{
                     "id" : 4,
