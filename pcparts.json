@@ -315,7 +315,6 @@
     "powerSupply" : [{
         "EVGA SuperNOVA 650" : [{
             "manufacturer" : "EVGA",
-            "model" : "SuperNOVA 650",
             "wattage" : "650W",
             "modular" : "Full",
             "efficiency" : "80+ Gold",
@@ -381,7 +380,7 @@
         "Corsair H150i PRO" : [{
             "waterCooled" : "yes-360mm",
             "supportedSocket" : ["AM2", "AM2+", "AM3", "AM3+", "AM4", "FM1", "FM2", "FM2+", "LGA1150", "LGA1151", "LGA1155", "LGA1156", "LGA1366", "LGA2011", "LGA2011-3", "LGA2066"],
-            "minfanRPM" : "",
+            "minfanRPM" : "0",
             "maxfanRPM" : "1600"
         }],
         "coolerA" : [{
