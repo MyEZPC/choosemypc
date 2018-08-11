@@ -1,0 +1,465 @@
+{
+    "cpu" : [{
+        "Intel Core i7-8700K" : {
+            "manufacturer" : "Intel",
+            "core" : "3.6Ghz",
+            "speed" : "6",
+            "series" : "Intel Core i7",
+            "socket" : "LGA1151"
+        },
+        "Intel Core i5-8600K" : {
+            "manufacturer" : "Intel",
+            "core" : "6",
+            "speed" : "3.6Ghz",
+            "series" : "Intel Core i5",
+            "socket" : "LGA1151"
+        },
+        "Intel Core i5-8400" : {
+            "manufacturer" : "Intel",
+            "core" : "6",
+            "speed" : "2.8Ghz",
+            "series" : "Intel Core i5",
+            "socket" : "LGA1151"
+        }]}
+,
+        "Intel Core i3-8100" : {
+            "manufacturer" : "Intel",
+            "core" : "4",
+            "speed" : "3.6Ghz",
+            "series" : "Intel Core i5",
+            "socket" : "LGA1151"
+        },
+        "AMD Ryzen 7 2700X" : {
+            "manufacturer" : "AMD",
+            "core" : "8",
+            "speed" : "3.7Ghz",
+            "series" : "AMD Ryzen 7",
+            "socket" : "AM4"
+        },
+        "AMD Ryzen 5 1600" : {
+            "manufacturer" : "AMD",
+            "core" : "6",
+            "speed" : "3.2Ghz",
+            "series" : "AMD Ryzen 5",
+            "socket" : "AM4"
+        },
+        "AMD Ryzen 5 2600" : {
+            "manufacturer" : "AMD",
+            "core" : "6",
+            "speed" : "3.4Ghz",
+            "series" : "AMD Ryzen 7",
+            "socket" : "AM4"
+        },
+        "AMD Ryzen 3 2200G" : {
+            "manufacturer" : "AMD",
+            "core" : "4",
+            "speed" : "3.5Ghz",
+            "series" : "AMD Ryzen 7",
+            "socket" : "AM4"
+        }
+    },
+    "mobo" : [{
+        "Asus ROG STRIX Z370-E GAMING" :[{
+            "manufacturer" : "Asus",
+            "moboSize" : "ATX",
+            "socket" : "LGA1151",
+            "ramSpeed" : [{
+                "DDR4" : ["2133","2400","2666","2800","3000","3200","3300","3333","3400","3466","3600","3733","3866","4000"]
+            }],
+            "ramPin" : "288-pin DIMM",
+            "maxRamSlots" : "4"
+        }],
+        "Asus STRIX B350-F GAMING" :[{
+            "manufacturer" : "Asus",
+            "moboSize" : "ATX",
+            "socket" : "AM4",
+            "ramSpeed" : [{
+                "DDR4" : ["2133","2400","2666","2933","3200"]
+            }],
+            "ramPin" : "288-pin DIMM",
+            "maxRam" : "4"
+        }],
+        "MSI B350M GAMING PRO" :[{
+            "manufacturer" : "MSI",
+            "moboSize" : "Micro ATX",
+            "socket" : "AM4",
+            "ramSpeed" : [{
+                "DDR4" : ["1866","2133","2400","2666","2933","3200"]
+            }],
+            "ramPin" : "288-pin DIMM",
+            "maxRam" : "2"
+        }],
+        "motherboardA" :[{
+            "manufacturer" : "",
+            "moboSize" : "",
+            "socket" : "",
+            "ramSpeed" : "",
+            "ramPin" : "",
+            "maxRam" : ""
+        }],
+        "motherboardA" :[{
+            "manufacturer" : "",
+            "moboSize" : "",
+            "socket" : "",
+            "ramSpeed" : "",
+            "ramPin" : "",
+            "maxRam" : ""
+        }],
+        "motherboardA" :[{
+            "manufacturer" : "",
+            "moboSize" : "",
+            "socket" : "",
+            "ramSpeed" : "",
+            "ramPin" : "",
+            "maxRam" : ""
+        }],
+        "motherboardA" :[{
+            "manufacturer" : "",
+            "moboSize" : "",
+            "socket" : "",
+            "ramSpeed" : "",
+            "ramPin" : "",
+            "maxRam" : ""
+        }],
+        "motherboardA" :[{
+            "manufacturer" : "",
+            "moboSize" : "",
+            "socket" : "",
+            "ramSpeed" : "",
+            "ramPin" : "",
+            "maxRam" : ""
+        }]
+    }],
+    "gpu" : [{
+        "MSI GeForce GTX 1060 6GT OCV1" : [{
+            "manufacturer" : "EVGA",
+            "chipset" : "GeForce GTX 1060 6GB",
+            "vRAM" : "6gb",
+            "memoryType" : "GDDR5",
+            "coreClock" : "1.61Ghz"
+        }],
+        "Gigabyte GV-N107TWF2-8GD" : [{
+            "manufacturer" : "Gigabyte",
+            "chipset" : "GeForce GTX 1070 Ti",
+            "vRAM" : "8gb",
+            "memoryType" : "GDDR5",
+            "coreClock" : "1.63GHz"
+        }],
+        "gpuA" : [{
+            "manufacturer" : "",
+            "chipset" : "",
+            "vRAM" : "",
+            "memoryType" : "",
+            "coreClock" : ""
+        }],
+        "gpuA" : [{
+            "manufacturer" : "",
+            "chipset" : "",
+            "vRAM" : "",
+            "memoryType" : "",
+            "coreClock" : ""
+        }],
+        "gpuA" : [{
+            "manufacturer" : "",
+            "chipset" : "",
+            "vRAM" : "",
+            "memoryType" : "",
+            "coreClock" : ""
+        }],
+        "gpuA" : [{
+            "manufacturer" : "",
+            "chipset" : "",
+            "vRAM" : "",
+            "memoryType" : "",
+            "coreClock" : ""
+        }],
+        "gpuA" : [{
+            "manufacturer" : "",
+            "chipset" : "",
+            "vRAM" : "",
+            "memoryType" : "",
+            "coreClock" : ""
+        }],
+        "gpuA" : [{
+            "manufacturer" : "",
+            "chipset" : "",
+            "vRAM" : "",
+            "memoryType" : "",
+            "coreClock" : ""
+        }]
+    }],
+    "storage" : [{
+        "Samsung MZ-76E1T0B/AM" : [{
+            "manufacturer" : "Samsung",
+            "type" : "SSD",
+            "interface" : "SATA 6 Gb/s",
+            "capacity" : "1tb",
+            "series" : "860 Evo"
+        }],
+        "Western Digital WD10EZEX" : [{
+            "manufacturer" : "Western Digital",
+            "type" : "HDD",
+            "interface" : "SATA 6 Gb/s",
+            "capacity" : "1tb",
+            "series" : "Caviar Blue"
+        }],
+        "Samsung MZ-V6P2T0BW" : [{
+            "manufacturer" : "Samsung",
+            "type" : "HDD",
+            "interface" : "M.2 (M)",
+            "capacity" : "1tb",
+            "series" : "960 Pro"
+        }],
+        "storeA" : [{
+            "manufacturer" : "",
+            "type" : "",
+            "interface" : "",
+            "capacity" : "",
+            "series" : ""
+        }],
+        "storeA" : [{
+            "manufacturer" : "",
+            "type" : "",
+            "interface" : "",
+            "capacity" : "",
+            "series" : ""
+        }],
+        "storeA" : [{
+            "manufacturer" : "",
+            "type" : "",
+            "interface" : "",
+            "capacity" : "",
+            "series" : ""
+        }],
+        "storeA" : [{
+            "manufacturer" : "",
+            "type" : "",
+            "interface" : "",
+            "capacity" : "",
+            "series" : ""
+        }],
+        "storeA" : [{
+            "manufacturer" : "",
+            "type" : "",
+            "interface" : "",
+            "capacity" : "",
+            "series" : ""
+        }]
+    }],
+    "memory" : [{
+        "Corsair Vengeance LPX" : [{
+            "manufacturer" : "Corsair",
+            "speed" : [{
+                "DDR4" : "3000"
+            }],
+            "type" : "288-pin DIMM",
+            "size" : "2x8gb"
+        }],
+        "Corsair Vengeance LPX" : [{
+            "manufacturer" : "Corsair",
+            "speed" : [{
+                "DDR4" : "2400"
+            }],
+            "type" : "288-pin DIMM",
+            "size" : "1x8gb"
+        }],
+        "memoryA" : [{
+            "manufacturer" : "",
+            "speed" : [{
+                "DDR4" : ""
+            }],
+            "type" : "",
+            "size" : ""
+        }],
+        "memoryA" : [{
+            "manufacturer" : "",
+            "speed" : [{
+                "DDR4" : ""
+            }],
+            "type" : "",
+            "size" : ""
+        }],
+        "memoryA" : [{
+            "manufacturer" : "",
+            "speed" : [{
+                "DDR4" : ""
+            }],
+            "type" : "",
+            "size" : ""
+        }],
+        "memoryA" : [{
+            "manufacturer" : "",
+            "speed" : [{
+                "DDR4" : ""
+            }],
+            "type" : "",
+            "size" : ""
+        }],
+        "memoryA" : [{
+            "manufacturer" : "",
+            "speed" : [{
+                "DDR4" : ""
+            }],
+            "type" : "",
+            "size" : ""
+        }],
+        "memoryA" : [{
+            "manufacturer" : "",
+            "speed" : [{
+                "DDR4" : ""
+            }],
+            "type" : "",
+            "size" : ""
+        }]
+    }],
+    "powerSupply" : [{
+        "EVGA SuperNOVA 650" : [{
+            "manufacturer" : "EVGA",
+            "wattage" : "650W",
+            "modular" : "Full",
+            "efficiency" : "80+ Gold",
+            "type" : "ATX"
+        }],
+        "Corsair CX550M" : [{
+            "manufacturer" : "Corsair",
+            "wattage" : "550W",
+            "modular" : "Semi",
+            "efficiency" : "80+ Bronze",
+            "type" : "ATX"
+        }],
+        "psuA" : [{
+            "manufacturer" : "",
+            "wattage" : "",
+            "modular" : "",
+            "efficiency" : "",
+            "type" : ""
+        }],
+        "psuA" : [{
+            "manufacturer" : "",
+            "wattage" : "",
+            "modular" : "",
+            "efficiency" : "",
+            "type" : ""
+        }],
+        "psuA" : [{
+            "manufacturer" : "",
+            "wattage" : "",
+            "modular" : "",
+            "efficiency" : "",
+            "type" : ""
+        }],
+        "psuA" : [{
+            "manufacturer" : "",
+            "wattage" : "",
+            "modular" : "",
+            "efficiency" : "",
+            "type" : ""
+        }],
+        "psuA" : [{
+            "manufacturer" : "",
+            "wattage" : "",
+            "modular" : "",
+            "efficiency" : "",
+            "type" : ""
+        }],
+        "psuA" : [{
+            "manufacturer" : "",
+            "wattage" : "",
+            "modular" : "",
+            "efficiency" : "",
+            "type" : ""
+        }]
+    }],
+    "cpuCooler" :[{
+        "Cooler Master Hyper 212 EVO" : [{
+            "waterCooled" : "no",
+            "supportedSocket" : ["AM2","AM2+","AM3","AM3+","AM4","FM1","FM2","FM2+","LGA1150","LGA1151","LGA1155","LGA1156","LGA1366","LGA1366","LGA2011","LGA2011-3","LGA2066","LGA775"],
+            "minfanRPM" : "600",
+            "maxfanRPM" : "2000"
+        }],
+        "Corsair H150i PRO" : [{
+            "waterCooled" : "yes-360mm",
+            "supportedSocket" : ["AM2", "AM2+", "AM3", "AM3+", "AM4", "FM1", "FM2", "FM2+", "LGA1150", "LGA1151", "LGA1155", "LGA1156", "LGA1366", "LGA2011", "LGA2011-3", "LGA2066"],
+            "minfanRPM" : "0",
+            "maxfanRPM" : "1600"
+        }],
+        "coolerA" : [{
+            "waterCooled" : "",
+            "supportedSocket" : [""],
+            "minfanRPM" : "",
+            "maxfanRPM" : ""
+        }],
+        "coolerA" : [{
+            "waterCooled" : "",
+            "supportedSocket" : [""],
+            "minfanRPM" : "",
+            "maxfanRPM" : ""
+        }],
+        "coolerA" : [{
+            "waterCooled" : "",
+            "supportedSocket" : [""],
+            "minfanRPM" : "",
+            "maxfanRPM" : ""
+        }],
+        "coolerA" : [{
+            "waterCooled" : "",
+            "supportedSocket" : [""],
+            "minfanRPM" : "",
+            "maxfanRPM" : ""
+        }],
+        "coolerA" : [{
+            "waterCooled" : "",
+            "supportedSocket" : [""],
+            "minfanRPM" : "",
+            "maxfanRPM" : ""
+        }],
+        "coolerA" : [{
+            "waterCooled" : "",
+            "supportedSocket" : [""],
+            "minfanRPM" : "",
+            "maxfanRPM" : ""
+        }]
+    }],
+    "casing" : [{
+        "NXZT" : [{
+            "type" : "ATX Mid Tower",
+            "frontUSB3" : "yes",
+            "moboCompability" : ["ATX", "Micro ATX", "Mini ITX"]
+        }],
+        "NXZT" : [{
+            "type" : "Cougar",
+            "frontUSB3" : "yes",
+            "moboCompability" : ["ATX", "Micro ATX", "Mini ITX"]
+        }],
+        "caseA" : [{
+            "type" : "",
+            "frontUSB3" : "",
+            "moboCompability" : [""]
+        }],
+        "caseA" : [{
+            "type" : "",
+            "frontUSB3" : "",
+            "moboCompability" : [""]
+        }],
+        "caseA" : [{
+            "type" : "",
+            "frontUSB3" : "",
+            "moboCompability" : [""]
+        }],
+        "caseA" : [{
+            "type" : "",
+            "frontUSB3" : "",
+            "moboCompability" : [""]
+        }],
+        "caseA" : [{
+            "type" : "",
+            "frontUSB3" : "",
+            "moboCompability" : [""]
+        }],
+        "caseA" : [{
+            "type" : "",
+            "frontUSB3" : "",
+            "moboCompability" : [""]
+        }]
+    }]
+}
