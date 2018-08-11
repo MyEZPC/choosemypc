@@ -284,7 +284,7 @@ var pcparts = {
     },{
         "id": 5,
         "manufacturer": "Fractal Design",
-        "case": "Fractal Design Define R6 Black TG	",
+        "case": "Fractal Design Define R6 Black TG",
         "type": "ATX Mid Tower",
         "frontUSB3": "yes",
         "moboCompatibility": ["ATX", "EATX", "Micro ATX", "Mini ITX"]
@@ -366,7 +366,6 @@ function pickCpu(pcparts) {
 
     //randomize cpucooler output only 1 //function pickCooler
     for (var i = trueCooler.length - 1; i > -1; i--) {
-
         var coolerRandomize = Math.floor(Math.random() * (i + 1));
         var temp = trueCooler[i];
         trueCooler[i] = trueCooler[coolerRandomize];
@@ -374,17 +373,38 @@ function pickCpu(pcparts) {
         var coolerCurrentIndex = trueCooler[coolerRandomize];
     }
     console.log(coolerCurrentIndex);
+
+    //randomize power supply //function pickPsu
+    for (var i = pcparts.psu.length - 1; i > -1; i--) {
+        var psuRandomize = Math.floor(Math.random() * (i + 1));
+        var psuCurrentIndex = pcparts.psu[storageRandomize];
+        break;
+    }
+    console.log(psuCurrentIndex);
+
+    //list a list of casing thats compatible based on mobo //function listCase
+    var caseCompatible = moboCurrentIndex;
+    var trueCase = [];
+
+    for (var i = pcparts.casing.length - 1; i > -1; i--) {
+        if (pcparts.casing[i].moboCompatibility.indexOf(caseCompatible.moboSize) != -1) {
+            trueCase = trueCase.concat(pcparts.casing[i]);
+        }
+    }
+
+    //randomize casing //function pickCase
+    for (var i = trueCase.length - 1; i > -1; i--) {
+        var caseRandomize = Math.floor(Math.random() * (i + 1));
+        var temp = trueCase[i];
+        trueCase[i] = trueCase[caseRandomize];
+        trueCase[caseRandomize] = temp;
+        var caseCurrentIndex = trueCase[caseRandomize];
+    }
+    console.log(caseCurrentIndex);
 }
-
-
-
-//randomize power supply //function pickPsu
-//list a list of casing thats compatible based on mobo //function listCase
-//randomize casing //function pickCase
 
 //display back all these information //function displayRig
 displayCPU = pickCpu(pcparts);
 
-//call back all these informations in one main function 
 
 
