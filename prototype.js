@@ -292,6 +292,9 @@ var pcparts = {
     ]
 };
 
+var generate = document.getElementById("generatePC");
+var resetBtn = document.getElementById("reset");
+
 function pickCpu(pcparts) {
     //randomize cpu output only 1 //function pickCpu
     for (var i = pcparts.cpu.length - 1; i > -1; i--) {
@@ -299,7 +302,7 @@ function pickCpu(pcparts) {
         var cpuCurrentIndex = pcparts.cpu[cpuRandomize];
         break;
     }
-    console.log(cpuCurrentIndex);
+    console.log("CPU => ",cpuCurrentIndex);
 
     // list a list of mobo thats compatible based on the cpu //function listMobo
     var cpuCompatible = cpuCurrentIndex;
@@ -317,7 +320,7 @@ function pickCpu(pcparts) {
         trueMobo[moboRandomize] = temp;
         var moboCurrentIndex = trueMobo[moboRandomize];
     }
-    console.log(moboCurrentIndex);
+    console.log("MotherBoard => ",moboCurrentIndex);
 
     //list a list of memory thats compatible based on the mobo //function listRam
     var memoryCompatible = moboCurrentIndex;
@@ -336,7 +339,7 @@ function pickCpu(pcparts) {
         trueMemory[memoryRandomize] = temp;
         var memoryCurrentIndex = trueMemory[memoryRandomize];
     }
-    console.log(memoryCurrentIndex);
+    console.log("Ram => ",memoryCurrentIndex);
 
     //randomize gpu output only 1 //function pickGpu
     for (var i = pcparts.gpu.length - 1; i > -1; i--) {
@@ -344,7 +347,7 @@ function pickCpu(pcparts) {
         var gpuCurrentIndex = pcparts.gpu[gpuRandomize];
         break;
     }
-    console.log(gpuCurrentIndex);
+    console.log("GPU => ",gpuCurrentIndex);
 
     //randomize storage output only 1 //function pickStorage
     for (var i = pcparts.storage.length - 1; i > -1; i--) {
@@ -352,7 +355,7 @@ function pickCpu(pcparts) {
         var storageCurrentIndex = pcparts.storage[storageRandomize];
         break;
     }
-    console.log(storageCurrentIndex);
+    console.log("Storage => ",storageCurrentIndex);
 
     //list a list of cpucooler thats compatible based on mobo //function listCpuCooler
     var coolerCompatible = cpuCurrentIndex;
@@ -372,7 +375,7 @@ function pickCpu(pcparts) {
         trueCooler[coolerRandomize] = temp;
         var coolerCurrentIndex = trueCooler[coolerRandomize];
     }
-    console.log(coolerCurrentIndex);
+    console.log("CpuCooler => ",coolerCurrentIndex);
 
     //randomize power supply //function pickPsu
     for (var i = pcparts.psu.length - 1; i > -1; i--) {
@@ -380,7 +383,7 @@ function pickCpu(pcparts) {
         var psuCurrentIndex = pcparts.psu[storageRandomize];
         break;
     }
-    console.log(psuCurrentIndex);
+    console.log("Psu => ",psuCurrentIndex);
 
     //list a list of casing thats compatible based on mobo //function listCase
     var caseCompatible = moboCurrentIndex;
@@ -400,11 +403,17 @@ function pickCpu(pcparts) {
         trueCase[caseRandomize] = temp;
         var caseCurrentIndex = trueCase[caseRandomize];
     }
-    console.log(caseCurrentIndex);
+    console.log("Case => ",caseCurrentIndex);
 }
 
 //display back all these information //function displayRig
-displayCPU = pickCpu(pcparts);
+// displayCPU = pickCpu(pcparts);
+generate.addEventListener("click", function(){
+    pickCpu(pcparts);
+})
 
+resetBtn.addEventListener("click", function(){
+    console.clear();
+})
 
 
