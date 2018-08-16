@@ -1,46 +1,45 @@
-//for testing purposes
 var pcparts = {
     "cpu": [{
         "id": 1,
         "processor": "Intel Core i7-8700K",
         "socket": "LGA1151"
-    }, {
+    },{
         "id": 2,
         "processor": "Intel Core i5-8600K",
         "socket": "LGA1151"
-    }, {
+    },{
         "id": 3,
         "processor": "AMD Ryzen 7 2700X",
         "socket": "AM4"
-    }, {
+    },{
         "id": 4,
         "processor": "AMD Ryzen 5 1600",
         "socket": "AM4"
-    }, {
+    },{
         "id": 5,
         "processor": "AMD Ryzen 5 2200G",
         "socket": "AM4"
-    }, {
+    },{
         "id": 6,
         "processor": "AMD Ryzen 5 2600X",
         "socket": "AM4"
-    }, {
+    },{
         "id": 7,
         "processor": "Intel Core i7-7700K",
         "socket": "LGA1151"
-    }, {
+    },{
         "id": 8,
         "processor": "AMD Ryzen 5 2400G",
         "socket": "AM4"
-    }, {
+    },{
         "id": 9,
         "processor": "Intel Core i3-8100",
         "socket": "LGA1151"
-    }, {
+    },{
         "id": 10,
         "processor": "Intel Core i9-7900X",
         "socket": "LGA2066"
-    }, {
+    },{
         "id": 11,
         "processor": "Intel Core i7-4670K",
         "socket": "LGA1151"
@@ -58,7 +57,7 @@ var pcparts = {
         "ramPin": "288-pin DIMM",
         "maxRamSlots": "4",
         "socket": "LGA1151"
-    }, {
+    },{
         "id": 2,
         "manufacturer": "Asus",
         "motherBoard": "Asus STRIX B350-F GAMING",
@@ -70,7 +69,7 @@ var pcparts = {
         "ramPin": "288-pin DIMM",
         "maxRamSlots": "4",
         "socket": "AM4"
-    }, {
+    },{
         "id": 3,
         "manufacturer": "MSI",
         "motherBoard": "MSI B350M GAMING PRO",
@@ -82,7 +81,7 @@ var pcparts = {
         "ramPin": "288-pin DIMM",
         "maxRamSlots": "2",
         "socket": "AM4"
-    }, {
+    },{
         "id": 4,
         "manufacturer": "Gigabyte",
         "motherBoard": "GIGABYTE GA-B250M-DS3H",
@@ -94,7 +93,7 @@ var pcparts = {
         "ramPin": "288-pin DIMM",
         "maxRamSlots": "4",
         "socket": "LGA1151"
-    }, {
+    },{
         "id": 5,
         "manufacturer": "MSI",
         "motherBoard": "MSI B350M PRO-VD PLUS",
@@ -106,7 +105,7 @@ var pcparts = {
         "ramPin": "288-pin DIMM",
         "maxRamSlots": "4",
         "socket": "LGA1151"
-    }, {
+    },{
         "id": 6,
         "manufacturer": "Asus",
         "motherBoard": "Asus ROG RAMPAGE VI EXTREME",
@@ -118,7 +117,7 @@ var pcparts = {
         "ramPin": "288-pin DIMM",
         "maxRamSlots": "8",
         "socket": "LGA2066"
-    }, {
+    },{
         "id": 7,
         "manufacturer": "Gigabyte",
         "motherBoard": "Gigabyte GA-AB350N-Gaming WIFI (rev. 1.0)",
@@ -130,7 +129,7 @@ var pcparts = {
         "ramPin": "288-pin DIMM",
         "maxRamSlots": "2",
         "socket": "AM4"
-    }, {
+    },{
         "id": 8,
         "manufacturer": "ASRock",
         "motherBoard": "ASRock X470 Master SLI/AC",
@@ -142,7 +141,7 @@ var pcparts = {
         "ramPin": "288-pin DIMM",
         "maxRamSlots": "4",
         "socket": "AM4"
-    }, {
+    },{
         "id": 9,
         "manufacturer": "MSI",
         "motherBoard": "MSI B350 TOMAHAWK",
@@ -154,7 +153,7 @@ var pcparts = {
         "ramPin": "288-pin DIMM",
         "maxRamSlots": "4",
         "socket": "AM4"
-    }, {
+    },{
         "id": 10,
         "manufacturer": "MSI",
         "motherBoard": "MSI B250M PRO-VD",
@@ -178,7 +177,7 @@ var pcparts = {
         },
         "ramPin": "288-pin DIMM",
         "size": "2x8gb"
-    }, {
+    },{
         "id": 2,
         "manufacturer": "Corsair",
         "ram": "Corsair Vengeance LPX",
@@ -188,7 +187,7 @@ var pcparts = {
         },
         "ramPin": "288-pin DIMM",
         "size": "1x8gb"
-    }, {
+    },{
         "id": 3,
         "manufacturer": "G.Skill",
         "ram": "G.Skill Ripjaws X Series",
@@ -198,7 +197,7 @@ var pcparts = {
         },
         "ramPin": "240-pin DIMM",
         "size": "2x8gb"
-    }, {
+    },{
         "id": 4,
         "manufacturer": "Kingston",
         "ram": "Kingston HyperX Fury Black",
@@ -208,7 +207,7 @@ var pcparts = {
         },
         "ramPin": "288-pin DIMM",
         "size": "2x4gb"
-    }, {
+    },{
         "id": 5,
         "manufacturer": "Team",
         "ram": "Team Vulcan",
@@ -218,7 +217,7 @@ var pcparts = {
         },
         "ramPin": "288-pin DIMM",
         "size": "2x8gb"
-    }, {
+    },{
         "id": 6,
         "manufacturer": "Crucial",
         "ram": "Crucial Ballistix Sport LT",
@@ -228,7 +227,7 @@ var pcparts = {
         },
         "ramPin": "288-pin DIMM",
         "size": "2x4gb"
-    }, {
+    },{
         "id": 7,
         "manufacturer": "G.Skill",
         "ram": "G.Skill Aegis",
@@ -238,7 +237,7 @@ var pcparts = {
         },
         "ramPin": "288-pin DIMM",
         "size": "1x8gb"
-    }, {
+    },{
         "id": 8,
         "manufacturer": "G.Skill",
         "ram": "G.Skill Ripjaws V Series",
@@ -248,7 +247,7 @@ var pcparts = {
         },
         "ramPin": "288-pin DIMM",
         "size": "2x8gb"
-    }, {
+    },{
         "id": 9,
         "manufacturer": "G.Skill",
         "ram": "G.Skill Trident Z RGB",
@@ -258,7 +257,7 @@ var pcparts = {
         },
         "ramPin": "288-pin DIMM",
         "size": "2x8gb"
-    }, {
+    },{
         "id": 10,
         "manufacturer": "Team",
         "ram": "Team Elite Plus",
@@ -268,7 +267,7 @@ var pcparts = {
         },
         "ramPin": "288-pin DIMM",
         "size": "1x8gb"
-    }, {
+    },{
         "id": 11,
         "manufacturer": "Patriot",
         "ram": "Patriot Viper 4",
@@ -463,15 +462,15 @@ var displayCooler = document.getElementById("cooler");
 var displayPsu = document.getElementById("psu");
 var displayCase = document.getElementById("case");
 
-function pickCpu(pcparts) {
-    for (var i = pcparts.cpu.length - 1; i > -1; i--) {
+function pickCpu(pcparts){
+    for (var i = pcparts.cpu.length - 1; i > -1; i--){
         var randomValue = Math.floor(Math.random() * (i + 1));
         cpuCurrentIndex = pcparts.cpu[randomValue];
         return cpuCurrentIndex;
     }
 }
 
-function pickMobo(pcparts) {
+function pickMobo(pcparts){
     var trueMobo = [];
     for (var i = pcparts.mobo.length - 1; i > -1; i--) {
         if (cpuCurrentIndex.socket === pcparts.mobo[i].socket) {
@@ -488,7 +487,7 @@ function pickMobo(pcparts) {
     return moboCurrentIndex;
 }
 
-function pickRam(pcparts) {
+function pickRam(pcparts){
     var trueMemory = [];
 
     for (var i = pcparts.memory.length - 1; i > -1; i--) {
@@ -515,7 +514,7 @@ function pickGpu(pcparts) {
     }
 }
 
-function pickStorage(pcparts) {
+function pickStorage(pcparts){
     for (var i = pcparts.storage.length - 1; i > -1; i--) {
         var randomValue = Math.floor(Math.random() * (i + 1));
         storageCurrentIndex = pcparts.storage[randomValue];
@@ -523,7 +522,7 @@ function pickStorage(pcparts) {
     }
 }
 
-function pickCooler(pcparts) {
+function pickCooler(pcparts){
     var trueCooler = [];
 
     for (var i = pcparts.cpuCooler.length - 1; i > -1; i--) {
@@ -542,7 +541,7 @@ function pickCooler(pcparts) {
     return coolerCurrentIndex;
 }
 
-function pickPsu(pcparts) {
+function pickPsu(pcparts){
     for (var i = pcparts.psu.length - 1; i > -1; i--) {
         var randomValue = Math.floor(Math.random() * (i + 1));
         psuCurrentIndex = pcparts.psu[randomValue];
@@ -550,7 +549,7 @@ function pickPsu(pcparts) {
     }
 }
 
-function pickCase(pcparts) {
+function pickCase(pcparts){
     var trueCase = [];
 
     for (var i = pcparts.casing.length - 1; i > -1; i--) {
@@ -569,12 +568,12 @@ function pickCase(pcparts) {
     return caseCurrentIndex;
 }
 
-function combineParts() {
+function combineParts(){
     consolidateParts = consolidateParts.concat(cpuCurrentIndex, moboCurrentIndex, memoryCurrentIndex, gpuCurrentIndex, storageCurrentIndex, coolerCurrentIndex, psuCurrentIndex, caseCurrentIndex);
     return consolidateParts;
 }
 
-function pickAllParts() {
+function pickAllParts(){
     pickCpu(pcparts);
     pickMobo(pcparts);
     pickRam(pcparts);
@@ -585,9 +584,9 @@ function pickAllParts() {
     pickCase(pcparts);
 }
 
-function displayParts() {
+function displayParts(){
     var i = 0;
-    while (i < consolidateParts.length) {
+    while (i < consolidateParts.length){
         console.log(i, consolidateParts[i].processor);
         displayCpu.textContent = "Processor: " + consolidateParts[i].processor;
         i++;
@@ -615,7 +614,7 @@ function displayParts() {
     }
 }
 
-generateBtn.addEventListener("click", function () {
+generateBtn.addEventListener("click", function(){
     pickAllParts();
     combineParts();
     displayParts();

@@ -1,0 +1,18 @@
+body {
+    margin : 0;
+}
+
+#cpu,#motherboard,#ram,#gpu,#storage,#cooler,#psu,#case {
+    float:none;
+    margin: 1%;
+}
+
+#container {
+    border: 3px outset;
+    box-shadow: 0 0 0 4px;
+    border-radius: 5px;
+    font: bold 1rem sans-serif;
+    margin: 1rem;
+    padding: 3px;
+    outline-offset: 3rem;
+}
