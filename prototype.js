@@ -1,4 +1,4 @@
-//for testing purposes
+//for   testing purposes
 var pcparts = {
     "cpu": [{
         "id": 1,
@@ -507,7 +507,6 @@ var pcparts = {
 var consolidateParts = [];
 var cpuCurrentIndex, moboCurrentIndex, memoryCurrentIndex, gpuCurrentIndex, storageCurrentIndex, coolerCurrentIndex, psuCurrentIndex, caseCurrentIndex;
 var generateBtn = document.getElementById("generatePc");
-// var resetBtn = document.getElementById("reset");
 var displayCpu = document.getElementById("cpu");
 var displayMobo = document.getElementById("motherboard");
 var displayRam = document.getElementById("ram");
@@ -516,6 +515,10 @@ var displayStorage = document.getElementById("storage");
 var displayCooler = document.getElementById("cooler");
 var displayPsu = document.getElementById("psu");
 var displayCase = document.getElementById("case");
+var displayTotal = document.getElementById("consolidatePrice");
+// var amount = document.getElementById("price");
+// amount = parseInt(amount.value, 10);
+var totalPrice= 0 ;
 
 function pickCpu(pcparts) {
     for (var i = pcparts.cpu.length - 1; i > -1; i--) {
@@ -623,11 +626,6 @@ function pickCase(pcparts) {
     return caseCurrentIndex;
 }
 
-function combineParts() {
-    consolidateParts = consolidateParts.concat(cpuCurrentIndex, moboCurrentIndex, memoryCurrentIndex, gpuCurrentIndex, storageCurrentIndex, coolerCurrentIndex, psuCurrentIndex, caseCurrentIndex);
-    return consolidateParts;
-}
-
 function pickAllParts() {
     pickCpu(pcparts);
     pickMobo(pcparts);
@@ -639,46 +637,72 @@ function pickAllParts() {
     pickCase(pcparts);
 }
 
+function combineParts() {
+    consolidateParts = consolidateParts.concat(cpuCurrentIndex, moboCurrentIndex, memoryCurrentIndex, gpuCurrentIndex, storageCurrentIndex, coolerCurrentIndex, psuCurrentIndex, caseCurrentIndex);
+    return consolidateParts;
+}
+
+function displayPrice() {
+    for(i = 0; i < consolidateParts.length; i++){
+        totalPrice += consolidateParts[i].price;
+    }
+    return totalPrice;
+}
+
 function displayParts() {
     var i = 0;
-    while (i < consolidateParts.length) {
-        console.log(i, consolidateParts[i].processor);
-        displayCpu.textContent = "Processor: " + consolidateParts[i].processor;
-        i++;
-        console.log(i, consolidateParts[i].motherBoard);
-        displayMobo.textContent = "Motherboard: " + consolidateParts[i].motherBoard;
-        i++;
-        console.log(i, consolidateParts[i].ram);
-        displayRam.textContent = "Memory: " + consolidateParts[i].ram;
-        i++;
-        console.log(i, consolidateParts[i].videoCard);
-        displayGpu.textContent = "Video Card: " + consolidateParts[i].videoCard;
-        i++;
-        console.log(i, consolidateParts[i].drive);
-        displayStorage.textContent = "Storage: " + consolidateParts[i].drive;
-        i++;
-        console.log(i, consolidateParts[i].cooler);
-        displayCooler.textContent = "Cpu Cooler: " + consolidateParts[i].cooler;
-        i++;
-        console.log(i, consolidateParts[i].powerSupply);
-        displayPsu.textContent = "Power Supply: " + consolidateParts[i].powerSupply;
-        i++;
-        console.log(i, consolidateParts[i].case);
-        displayCase.textContent = "Casing: " + consolidateParts[i].case;
-        i++;
+    displayCpu.textContent = "Processor: " + consolidateParts[i].processor + " --> RM" + consolidateParts[i].price;
+    console.log(consolidateParts[i].processor);
+    i++;
+    displayMobo.textContent = "Motherboard: " + consolidateParts[i].motherBoard + " --> RM" + consolidateParts[i].price;
+    console.log(consolidateParts[i].motherBoard);
+    i++;
+    displayRam.textContent = "Memory: " + consolidateParts[i].ram + " --> RM" + consolidateParts[i].price;
+    console.log(consolidateParts[i].ram);
+    i++;
+    displayGpu.textContent = "Video Card: " + consolidateParts[i].videoCard + " --> RM" + consolidateParts[i].price;
+    console.log(consolidateParts[i].videoCard);
+    i++;
+    displayStorage.textContent = "Storage: " + consolidateParts[i].drive + " --> RM" + consolidateParts[i].price;
+    console.log(consolidateParts[i].drive);
+    i++;
+    displayCooler.textContent = "Cpu Cooler: " + consolidateParts[i].cooler + " --> RM" + consolidateParts[i].price;
+    console.log(consolidateParts[i].cooler);
+    i++;
+    displayPsu.textContent = "Power Supply: " + consolidateParts[i].powerSupply + " --> RM" + consolidateParts[i].price;
+    console.log(consolidateParts[i].powerSupply);
+    i++;
+    displayCase.textContent = "Casing: " + consolidateParts[i].case + " --> RM" + consolidateParts[i].price;
+    console.log(consolidateParts[i].case);
+    displayTotal.textContent = "Total build: RM" + totalPrice;
+}
+
+function pickByPrice(){
+    pickAllParts();
+    combineParts();
+    displayPrice();
+    console.log(totalPrice);
+    var i = true;
+    while (i){
+        if (totalPrice > 6000){
+            totalPrice = 0;
+            consolidateParts = [];
+            pickAllParts();
+            combineParts();
+            displayPrice();
+            console.log(totalPrice);
+        }else {
+            break;
+        }
     }
+    displayParts();
 }
 
 generateBtn.addEventListener("click", function () {
-    pickAllParts();
-    combineParts();
-    displayParts();
+    // console.log(amount);
+    pickByPrice();
+    totalPrice = 0;
     consolidateParts = [];
 });
 
-// resetBtn.addEventListener("click", function(){
-//     console.clear();
-//     pickAllParts();
-//     combineParts();
-//     consolidateParts = [];
-// })
+
