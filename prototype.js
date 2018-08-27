@@ -516,8 +516,7 @@ var displayCooler = document.getElementById("cooler");
 var displayPsu = document.getElementById("psu");
 var displayCase = document.getElementById("case");
 var displayTotal = document.getElementById("consolidatePrice");
-// var amount = document.getElementById("price");
-// amount = parseInt(amount.value, 10);
+
 var totalPrice= 0 ;
 
 function pickCpu(pcparts) {
@@ -678,13 +677,16 @@ function displayParts() {
 }
 
 function pickByPrice(){
+    var choosePrice = document.getElementById("choosePrice");
+    choosePrice = parseInt(choosePrice.value,10);
+    console.log("You have chosen " + choosePrice);
     pickAllParts();
     combineParts();
     displayPrice();
     console.log(totalPrice);
     var i = true;
     while (i){
-        if (totalPrice > 6000){
+        if (totalPrice > choosePrice){
             totalPrice = 0;
             consolidateParts = [];
             pickAllParts();
@@ -699,7 +701,6 @@ function pickByPrice(){
 }
 
 generateBtn.addEventListener("click", function () {
-    // console.log(amount);
     pickByPrice();
     totalPrice = 0;
     consolidateParts = [];
