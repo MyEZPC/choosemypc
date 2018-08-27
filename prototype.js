@@ -1,49 +1,60 @@
-//for testing purposes
+//for   testing purposes
 var pcparts = {
     "cpu": [{
         "id": 1,
         "processor": "Intel Core i7-8700K",
-        "socket": "LGA1151"
+        "socket": "LGA1151",
+        "price" : 1450
     }, {
         "id": 2,
         "processor": "Intel Core i5-8600K",
-        "socket": "LGA1151"
+        "socket": "LGA1151",
+        "price" : 1015
     }, {
         "id": 3,
         "processor": "AMD Ryzen 7 2700X",
-        "socket": "AM4"
+        "socket": "AM4",
+        "price" : 1422
     }, {
         "id": 4,
         "processor": "AMD Ryzen 5 1600",
-        "socket": "AM4"
+        "socket": "AM4",
+        "price" : 776
     }, {
         "id": 5,
-        "processor": "AMD Ryzen 5 2200G",
-        "socket": "AM4"
+        "processor": "AMD Ryzen 3 2200G",
+        "socket": "AM4",
+        "price" : 428
     }, {
         "id": 6,
         "processor": "AMD Ryzen 5 2600X",
-        "socket": "AM4"
+        "socket": "AM4",
+        "price" : 909
     }, {
         "id": 7,
         "processor": "Intel Core i7-7700K",
-        "socket": "LGA1151"
+        "socket": "LGA1151",
+        "price" : 1375
     }, {
         "id": 8,
         "processor": "AMD Ryzen 5 2400G",
-        "socket": "AM4"
+        "socket": "AM4",
+        "price" : 685
     }, {
         "id": 9,
         "processor": "Intel Core i3-8100",
-        "socket": "LGA1151"
+        "socket": "LGA1151",
+        "price" : 435
     }, {
         "id": 10,
         "processor": "Intel Core i9-7900X",
-        "socket": "LGA2066"
+        "socket": "LGA2066",
+        "price" : 3699
     }, {
         "id": 11,
-        "processor": "Intel Core i7-4670K",
-        "socket": "LGA1151"
+        "processor": "Intel Core i5-4670K",
+        "socket": "LGA1151",
+        "price" : 700
     }
     ],
     "mobo": [{
@@ -57,7 +68,8 @@ var pcparts = {
         },
         "ramPin": "288-pin DIMM",
         "maxRamSlots": "4",
-        "socket": "LGA1151"
+        "socket": "LGA1151",
+        "price" : 1300
     }, {
         "id": 2,
         "manufacturer": "Asus",
@@ -69,7 +81,8 @@ var pcparts = {
         },
         "ramPin": "288-pin DIMM",
         "maxRamSlots": "4",
-        "socket": "AM4"
+        "socket": "AM4",
+        "price" : 566
     }, {
         "id": 3,
         "manufacturer": "MSI",
@@ -81,7 +94,8 @@ var pcparts = {
         },
         "ramPin": "288-pin DIMM",
         "maxRamSlots": "2",
-        "socket": "AM4"
+        "socket": "AM4",
+        "price" : 399
     }, {
         "id": 4,
         "manufacturer": "Gigabyte",
@@ -93,7 +107,8 @@ var pcparts = {
         },
         "ramPin": "288-pin DIMM",
         "maxRamSlots": "4",
-        "socket": "LGA1151"
+        "socket": "LGA1151",
+        "price" : 459
     }, {
         "id": 5,
         "manufacturer": "MSI",
@@ -105,7 +120,8 @@ var pcparts = {
         },
         "ramPin": "288-pin DIMM",
         "maxRamSlots": "4",
-        "socket": "LGA1151"
+        "socket": "LGA1151",
+        "price" : 339
     }, {
         "id": 6,
         "manufacturer": "Asus",
@@ -117,7 +133,8 @@ var pcparts = {
         },
         "ramPin": "288-pin DIMM",
         "maxRamSlots": "8",
-        "socket": "LGA2066"
+        "socket": "LGA2066",
+        "price" : 2759
     }, {
         "id": 7,
         "manufacturer": "Gigabyte",
@@ -129,7 +146,8 @@ var pcparts = {
         },
         "ramPin": "288-pin DIMM",
         "maxRamSlots": "2",
-        "socket": "AM4"
+        "socket": "AM4",
+        "price" : 499
     }, {
         "id": 8,
         "manufacturer": "ASRock",
@@ -141,7 +159,8 @@ var pcparts = {
         },
         "ramPin": "288-pin DIMM",
         "maxRamSlots": "4",
-        "socket": "AM4"
+        "socket": "AM4",
+        "price" : 659
     }, {
         "id": 9,
         "manufacturer": "MSI",
@@ -153,7 +172,8 @@ var pcparts = {
         },
         "ramPin": "288-pin DIMM",
         "maxRamSlots": "4",
-        "socket": "AM4"
+        "socket": "AM4",
+        "price" : 610
     }, {
         "id": 10,
         "manufacturer": "MSI",
@@ -165,7 +185,8 @@ var pcparts = {
         },
         "ramPin": "288-pin DIMM",
         "maxRamSlots": "2",
-        "socket": "LGA1151"
+        "socket": "LGA1151",
+        "price" : 378
     }
     ],
     "memory": [{
@@ -177,7 +198,8 @@ var pcparts = {
             "frequency": "3000"
         },
         "ramPin": "288-pin DIMM",
-        "size": "2x8gb"
+        "size": "2x8gb",
+        "price" : 859
     }, {
         "id": 2,
         "manufacturer": "Corsair",
@@ -187,7 +209,8 @@ var pcparts = {
             "frequency": "2400"
         },
         "ramPin": "288-pin DIMM",
-        "size": "1x8gb"
+        "size": "1x8gb",
+        "price" : 354
     }, {
         "id": 3,
         "manufacturer": "G.Skill",
@@ -197,7 +220,8 @@ var pcparts = {
             "frequency": "1600"
         },
         "ramPin": "240-pin DIMM",
-        "size": "2x8gb"
+        "size": "2x8gb",
+        "price" : 672
     }, {
         "id": 4,
         "manufacturer": "Kingston",
@@ -207,7 +231,8 @@ var pcparts = {
             "frequency": "2133"
         },
         "ramPin": "288-pin DIMM",
-        "size": "2x4gb"
+        "size": "2x4gb",
+        "price" : 450
     }, {
         "id": 5,
         "manufacturer": "Team",
@@ -217,7 +242,8 @@ var pcparts = {
             "frequency": "2400"
         },
         "ramPin": "288-pin DIMM",
-        "size": "2x8gb"
+        "size": "2x8gb",
+        "price" : 616
     }, {
         "id": 6,
         "manufacturer": "Crucial",
@@ -227,7 +253,8 @@ var pcparts = {
             "frequency": "2400"
         },
         "ramPin": "288-pin DIMM",
-        "size": "2x4gb"
+        "size": "2x4gb",
+        "price" : 339
     }, {
         "id": 7,
         "manufacturer": "G.Skill",
@@ -237,17 +264,19 @@ var pcparts = {
             "frequency": "3000"
         },
         "ramPin": "288-pin DIMM",
-        "size": "1x8gb"
+        "size": "1x8gb",
+        "price" : 350
     }, {
         "id": 8,
         "manufacturer": "G.Skill",
         "ram": "G.Skill Ripjaws V Series",
         "ramSpec": {
             "type": "DDR4",
-            "frequency": "3200"
+            "frequency": "2800"
         },
         "ramPin": "288-pin DIMM",
-        "size": "2x8gb"
+        "size": "1x8gb",
+        "price" : 359
     }, {
         "id": 9,
         "manufacturer": "G.Skill",
@@ -257,17 +286,19 @@ var pcparts = {
             "frequency": "3200"
         },
         "ramPin": "288-pin DIMM",
-        "size": "2x8gb"
+        "size": "2x8gb",
+        "price" : 795
     }, {
         "id": 10,
         "manufacturer": "Team",
         "ram": "Team Elite Plus",
         "ramSpec": {
             "type": "DDR4",
-            "frequency": "4200"
+            "frequency": "2400"
         },
         "ramPin": "288-pin DIMM",
-        "size": "1x8gb"
+        "size": "1x8gb",
+        "price" : 275
     }, {
         "id": 11,
         "manufacturer": "Patriot",
@@ -277,7 +308,8 @@ var pcparts = {
             "frequency": "3000"
         },
         "ramPin": "288-pin DIMM",
-        "size": "2x4gb"
+        "size": "2x8gb",
+        "price" : 799
     }
     ],
     "gpu": [{
@@ -286,35 +318,40 @@ var pcparts = {
         "videoCard": "MSI GeForce GTX 1060 6GT OCV1",
         "vRam": "6gb",
         "memoryType": "GDDR5",
-        "coreClock": "1.61GHz"
+        "coreClock": "1.61GHz",
+        "price" : 1300
     }, {
         "id": 2,
         "manufacturer": "Gigabyte",
         "videoCard": "Gigabyte GV-N107TWF2-8GD",
         "vRam": "8gb",
         "memoryType": "GDDR5",
-        "coreClock": "1.63GHz"
+        "coreClock": "1.63GHz",
+        "price" : 1999
     }, {
         "id": 3,
         "manufacturer": "Gigabyte",
         "videoCard": "GeForce GTX 1080 8GB WINDFORCE OC 8G Video Card",
         "vRam": "8gb",
         "memoryType": "GDDR5X",
-        "coreClock": "1.66GHz"
+        "coreClock": "1.66GHz",
+        "price" : 2899
     }, {
         "id": 4,
         "manufacturer": "Asus",
         "videoCard": "Asus ROG-STRIX-RX580-O8G-GAMING",
         "vRam": "8gb",
         "memoryType": "GDDR5",
-        "coreClock": "1.26GHz"
+        "coreClock": "1.26GHz",
+        "price" : 1899
     }, {
         "id": 5,
         "manufacturer": "EVGA",
         "videoCard": "GeForce GTX 970 4GB Superclocked ACX 2.0",
         "vRam": "4gb",
         "memoryType": "GDDR5",
-        "coreClock": "1.17GHz"
+        "coreClock": "1.17GHz",
+        "price" : 1300
     }
     ],
     "storage": [{
@@ -323,28 +360,32 @@ var pcparts = {
         "drive": "Caviar Blue 1TB 3.5 7200RPM Internal Hard Drive",
         "type": "HDD",
         "interface": "SATA 6 Gb/s",
-        "capacity": "1tb"
+        "capacity": "1tb",
+        "price" : 159
     }, {
         "id": 2,
         "manufacturer": "Seagate",
         "drive": "Barracuda 2TB 3.5 7200RPM Internal Hard Drive",
         "type": "HDD",
         "interface": "SATA 6 Gb/s",
-        "capacity": "2tb"
+        "capacity": "2tb",
+        "price" : 240
     }, {
         "id": 3,
         "manufacturer": "Samsung",
         "drive": "850 EVO-Series 500GB 2.5 Solid State Drive",
         "type": "SSD",
         "interface": "SATA 6 Gb/s",
-        "capacity": "500gb"
+        "capacity": "500gb",
+        "price" : 535
     }, {
         "id": 4,
         "manufacturer": "Samsung",
         "drive": "970 Evo 500GB M.2-2280 Solid State Drive",
         "type": "SSD",
         "interface": "M.2",
-        "capacity": "500gb"
+        "capacity": "500gb",
+        "price" : 1515
     }
     ],
     "cpuCooler": [{
@@ -353,28 +394,32 @@ var pcparts = {
         "waterCooled": "no",
         "supportedSocket": ["AM2", "AM2+", "AM3", "AM3+", "AM4", "FM1", "FM2", "FM2+", "LGA1150", "LGA1151", "LGA1155", "LGA1156", "LGA1366", "LGA1366", "LGA2011", "LGA2011-3", "LGA2066", "LGA775"],
         "minFanRPM": "600",
-        "maxFanRPM": "2000"
+        "maxFanRPM": "2000",
+        "price" : 112
     }, {
         "id": 2,
         "cooler": "Corsair H100i v2",
         "waterCooled": "yes",
         "supportedSocket": ["AM2", "AM2+", "AM3", "AM3+", "AM4", "FM1", "FM2", "FM2+", "LGA1150", "LGA1151", "LGA1155", "LGA1156", "LGA1366", "LGA2011", "LGA2011-3", "LGA2066"],
         "minFanRPM": "",
-        "maxFanRPM": "2435"
+        "maxFanRPM": "2435",
+        "price" : 479
     }, {
         "id": 3,
         "cooler": "NZXT Kraken X62 Rev 2",
         "waterCooled": "yes",
         "supportedSocket": ["AM2", "AM2+", "AM3", "AM3+", "AM4", "FM1", "FM2", "FM2+", "LGA1150", "LGA1151", "LGA1155", "LGA1156", "LGA1366", "LGA2011", "LGA2011-3", "LGA2066", "TR4"],
         "minFanRPM": "500",
-        "maxFanRPM": "1800"
+        "maxFanRPM": "1800",
+        "price" : 719
     }, {
         "id": 4,
         "cooler": "CRYORIG H7",
         "waterCooled": "no",
         "supportedSocket": ["AM2", "AM2+", "AM3", "AM3+", "AM4", "FM1", "FM2", "FM2+", "LGA1150", "LGA1151", "LGA1155", "LGA1156"],
         "minFanRPM": "330",
-        "maxFanRPM": "1600"
+        "maxFanRPM": "1600",
+        "price" : 199
     }
     ],
     "psu": [{
@@ -384,7 +429,8 @@ var pcparts = {
         "wattage": "650W",
         "modular": "Full",
         "efficiency": "80+ Gold",
-        "type": "ATX"
+        "type": "ATX",
+        "price" : 455
     }, {
         "id": 2,
         "manufacturer": "Corsair",
@@ -392,7 +438,8 @@ var pcparts = {
         "wattage": "550W",
         "modular": "Semi",
         "efficiency": "80+ Bronze",
-        "type": "ATX"
+        "type": "ATX",
+        "price" : 346
     }, {
         "id": 3,
         "manufacturer": "Corsair",
@@ -400,7 +447,8 @@ var pcparts = {
         "wattage": "1000W",
         "modular": "Full",
         "efficiency": "80+ Platinum",
-        "type": "ATX"
+        "type": "ATX",
+        "price" : 797
     }, {
         "id": 4,
         "manufacturer": "Corsair",
@@ -408,7 +456,8 @@ var pcparts = {
         "wattage": "550W",
         "modular": "Semi",
         "efficiency": "80+ Gold",
-        "type": "ATX"
+        "type": "ATX",
+        "price" : 339
     }
     ],
     "casing": [{
@@ -417,35 +466,40 @@ var pcparts = {
         "case": "NZXT S340 (Black/Red)",
         "type": "ATX Mid Tower",
         "frontUSB3": "yes",
-        "moboCompatibility": ["ATX", "Micro ATX", "Mini ITX"]
+        "moboCompatibility": ["ATX", "Micro ATX", "Mini ITX"],
+        "price" : 437
     }, {
         "id": 2,
         "manufacturer": "Cougar",
         "case": "Cougar MX330",
         "type": "ATX Mid Tower",
         "frontUSB3": "yes",
-        "moboCompatibility": ["ATX", "Micro ATX", "Mini ITX"]
+        "moboCompatibility": ["ATX", "Micro ATX", "Mini ITX"],
+        "price" : 199
     }, {
         "id": 3,
         "manufacturer": "Phanteks",
         "case": "Phanteks Enthoo Pro M Tempered Glass (Black)",
         "type": "ATX Mid Tower",
         "frontUSB3": "yes",
-        "moboCompatibility": ["ATX", "Micro ATX", "Mini ITX"]
+        "moboCompatibility": ["ATX", "Micro ATX", "Mini ITX"],
+        "price" : 419
     }, {
         "id": 4,
         "manufacturer": "Thermaltake",
         "case": "Thermaltake Core V21",
         "type": "MicroATX Mini Tower",
         "frontUSB3": "yes",
-        "moboCompatibility": ["Micro ATX", "Mini ITX"]
+        "moboCompatibility": ["Micro ATX", "Mini ITX"],
+        "price" : 283
     }, {
         "id": 5,
         "manufacturer": "Fractal Design",
         "case": "Fractal Design Define R6 Black TG",
         "type": "ATX Mid Tower",
         "frontUSB3": "yes",
-        "moboCompatibility": ["ATX", "EATX", "Micro ATX", "Mini ITX"]
+        "moboCompatibility": ["ATX", "EATX", "Micro ATX", "Mini ITX"],
+        "price" : 650
     }
     ]
 };
@@ -453,7 +507,6 @@ var pcparts = {
 var consolidateParts = [];
 var cpuCurrentIndex, moboCurrentIndex, memoryCurrentIndex, gpuCurrentIndex, storageCurrentIndex, coolerCurrentIndex, psuCurrentIndex, caseCurrentIndex;
 var generateBtn = document.getElementById("generatePc");
-// var resetBtn = document.getElementById("reset");
 var displayCpu = document.getElementById("cpu");
 var displayMobo = document.getElementById("motherboard");
 var displayRam = document.getElementById("ram");
@@ -462,6 +515,9 @@ var displayStorage = document.getElementById("storage");
 var displayCooler = document.getElementById("cooler");
 var displayPsu = document.getElementById("psu");
 var displayCase = document.getElementById("case");
+var displayTotal = document.getElementById("consolidatePrice");
+
+var totalPrice= 0 ;
 
 function pickCpu(pcparts) {
     for (var i = pcparts.cpu.length - 1; i > -1; i--) {
@@ -569,11 +625,6 @@ function pickCase(pcparts) {
     return caseCurrentIndex;
 }
 
-function combineParts() {
-    consolidateParts = consolidateParts.concat(cpuCurrentIndex, moboCurrentIndex, memoryCurrentIndex, gpuCurrentIndex, storageCurrentIndex, coolerCurrentIndex, psuCurrentIndex, caseCurrentIndex);
-    return consolidateParts;
-}
-
 function pickAllParts() {
     pickCpu(pcparts);
     pickMobo(pcparts);
@@ -585,46 +636,74 @@ function pickAllParts() {
     pickCase(pcparts);
 }
 
+function combineParts() {
+    consolidateParts = consolidateParts.concat(cpuCurrentIndex, moboCurrentIndex, memoryCurrentIndex, gpuCurrentIndex, storageCurrentIndex, coolerCurrentIndex, psuCurrentIndex, caseCurrentIndex);
+    return consolidateParts;
+}
+
+function displayPrice() {
+    for(i = 0; i < consolidateParts.length; i++){
+        totalPrice += consolidateParts[i].price;
+    }
+    return totalPrice;
+}
+
 function displayParts() {
     var i = 0;
-    while (i < consolidateParts.length) {
-        console.log(i, consolidateParts[i].processor);
-        displayCpu.textContent = "Processor: " + consolidateParts[i].processor;
-        i++;
-        console.log(i, consolidateParts[i].motherBoard);
-        displayMobo.textContent = "Motherboard: " + consolidateParts[i].motherBoard;
-        i++;
-        console.log(i, consolidateParts[i].ram);
-        displayRam.textContent = "Memory: " + consolidateParts[i].ram;
-        i++;
-        console.log(i, consolidateParts[i].videoCard);
-        displayGpu.textContent = "Video Card: " + consolidateParts[i].videoCard;
-        i++;
-        console.log(i, consolidateParts[i].drive);
-        displayStorage.textContent = "Storage: " + consolidateParts[i].drive;
-        i++;
-        console.log(i, consolidateParts[i].cooler);
-        displayCooler.textContent = "Cpu Cooler: " + consolidateParts[i].cooler;
-        i++;
-        console.log(i, consolidateParts[i].powerSupply);
-        displayPsu.textContent = "Power Supply: " + consolidateParts[i].powerSupply;
-        i++;
-        console.log(i, consolidateParts[i].case);
-        displayCase.textContent = "Casing: " + consolidateParts[i].case;
-        i++;
+    displayCpu.textContent = "Processor: " + consolidateParts[i].processor + " --> RM" + consolidateParts[i].price;
+    console.log(consolidateParts[i].processor);
+    i++;
+    displayMobo.textContent = "Motherboard: " + consolidateParts[i].motherBoard + " --> RM" + consolidateParts[i].price;
+    console.log(consolidateParts[i].motherBoard);
+    i++;
+    displayRam.textContent = "Memory: " + consolidateParts[i].ram + " --> RM" + consolidateParts[i].price;
+    console.log(consolidateParts[i].ram);
+    i++;
+    displayGpu.textContent = "Video Card: " + consolidateParts[i].videoCard + " --> RM" + consolidateParts[i].price;
+    console.log(consolidateParts[i].videoCard);
+    i++;
+    displayStorage.textContent = "Storage: " + consolidateParts[i].drive + " --> RM" + consolidateParts[i].price;
+    console.log(consolidateParts[i].drive);
+    i++;
+    displayCooler.textContent = "Cpu Cooler: " + consolidateParts[i].cooler + " --> RM" + consolidateParts[i].price;
+    console.log(consolidateParts[i].cooler);
+    i++;
+    displayPsu.textContent = "Power Supply: " + consolidateParts[i].powerSupply + " --> RM" + consolidateParts[i].price;
+    console.log(consolidateParts[i].powerSupply);
+    i++;
+    displayCase.textContent = "Casing: " + consolidateParts[i].case + " --> RM" + consolidateParts[i].price;
+    console.log(consolidateParts[i].case);
+    displayTotal.textContent = "Total build: RM" + totalPrice;
+}
+
+function pickByPrice(){
+    var choosePrice = document.getElementById("choosePrice");
+    choosePrice = parseInt(choosePrice.value,10);
+    console.log("You have chosen " + choosePrice);
+    pickAllParts();
+    combineParts();
+    displayPrice();
+    console.log(totalPrice);
+    var i = true;
+    while (i){
+        if (totalPrice > choosePrice){
+            totalPrice = 0;
+            consolidateParts = [];
+            pickAllParts();
+            combineParts();
+            displayPrice();
+            console.log(totalPrice);
+        }else {
+            break;
+        }
     }
+    displayParts();
 }
 
 generateBtn.addEventListener("click", function () {
-    pickAllParts();
-    combineParts();
-    displayParts();
+    pickByPrice();
+    totalPrice = 0;
     consolidateParts = [];
 });
 
-// resetBtn.addEventListener("click", function(){
-//     console.clear();
-//     pickAllParts();
-//     combineParts();
-//     consolidateParts = [];
-// })
+

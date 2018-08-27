@@ -2,7 +2,17 @@ body {
     margin : 0;
 }
 
-#cpu,#motherboard,#ram,#gpu,#storage,#cooler,#psu,#case {
+h2 {
+    text-align: center;
+}
+
+/* #generatePc {
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+} */
+
+#cpu,#motherboard,#ram,#gpu,#storage,#cooler,#psu,#case,#totalPrice {
     float:none;
     margin: 1%;
 }
@@ -15,4 +25,44 @@ body {
     margin: 1rem;
     padding: 3px;
     outline-offset: 3rem;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 60%;
+    height: 15px;
+    border-radius: 5px;   
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin: 1%;
+    margin-left:20%;
+    margin-right: 20%;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+#amount{
+    margin-left: 49%;
+    width:100%;
+    text-align: center;
+    font: bold 1rem sans-serif;
 }
