@@ -685,15 +685,48 @@ function pickByPrice(){
     displayPrice();
     console.log(totalPrice);
     var i = true;
-    while (i){
-        if (totalPrice > choosePrice){
+    var marginPrice;
+    marginPrice = totalPrice - choosePrice;
+    marginPrice = Math.abs(marginPrice);
+    console.log("margin ",marginPrice);
+    // while (i){
+    //     if (totalPrice > choosePrice){
+    //         totalPrice = 0;
+    //         consolidateParts = [];
+    //         pickAllParts();
+    //         combineParts();
+    //         displayPrice();
+    //         console.log(totalPrice);
+    //     }else {
+    //         break;
+    //     }
+    // }
+    while (i) {
+        if (totalPrice > choosePrice) {
+            if (marginPrice > 100){
+                totalPrice = 0;
+                consolidateParts = [];
+                pickAllParts();
+                combineParts();
+                displayPrice();
+                marginPrice = totalPrice - choosePrice;
+                marginPrice = Math.abs(marginPrice);
+                console.log("margin ", marginPrice);
+                console.log(totalPrice);
+            }else {
+                break;
+            }
+        } else if (marginPrice > 100) {
             totalPrice = 0;
             consolidateParts = [];
             pickAllParts();
             combineParts();
             displayPrice();
+            marginPrice = totalPrice - choosePrice;
+            marginPrice = Math.abs(marginPrice);
+            console.log("margin ", marginPrice);
             console.log(totalPrice);
-        }else {
+        } else {
             break;
         }
     }
